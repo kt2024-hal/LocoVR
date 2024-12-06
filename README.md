@@ -14,6 +14,8 @@ We present LocoVR, a dataset of two-person interactions in over 130 different in
 ![Overview](./Overview.png)
  - All scene data (3D geometry, semantics, textures) are derived from [Habitat-Matterport 3D Semantics Dataset (HM3DSem)](https://aihabitat.org/datasets/hm3d-semantics/) and [Habitat-Matterport 3D Dataset](https://aihabitat.org/datasets/hm3d/).
 
+---
+
 ## 1. LocoVR Dataset
 ### 1.1 Downloading LocoVR dataset
 LocoVR dataset is accessible from the following download link. 
@@ -68,7 +70,9 @@ Tips:
 - To change the map type (binary, height, semantic, texture), modify "map_type" in the config.yaml.
 - If you need to generate photo realistic texture map, download HM3D (including .obj) from the following link.
   - [HM3D](https://matterport.com/partners/facebook)
-  - 
+
+---
+
 ## 2. LocoReal Dataset
 Although LocoVR is collected in highly realistic virtual environments and is useful for learning human trajectories in relation to the surrounding environment, there remains a general concern regarding potential differences in human perception between physical and virtual spaces, which could lead to performance degradation when transferring models from virtual to real-world scenarios. To mitigate this concern, we developed LocoReal, a human trajectory dataset collected in physical space, which serves as test data to demonstrate that models trained on LocoVR can be effectively applied in real-world environments.
 
@@ -89,6 +93,9 @@ pip install -r requirements.txt
 ```
 python ./vis_traj.py
 ```
+
+---
+
 ## 3 Test Code for global path prediction
 Here we provide the test code for global path prediction. This task estimates a static global path from a starting point to a goal location, which can be used to predict human global paths or plan human-like global paths for robots. Our dataset demonstrates the ability to learn such human-like paths that consider obstacle avoidance, efficiency, and social motion behaviors, such as maintaining social distance when passing or choosing longer routes to avoid collisions. The input includes the past trajectories of two people, p1 and p2 (length=1.0s, interval=0.067s), past heading directions of p1 and p2 (length=1.0s, interval=0.067s), scene map, and goal position. The output is a static path from the start to the goal.
 Here we provide the model trained by LocoVR, test code and the input data (LocoReal) to evaluate the model.
@@ -110,6 +117,8 @@ pip install -r requirements.txt
 ```
 python ./run.py
 ```
+
+---
 
 ## Evaluation codes for ICLR2025 main paper
 Evaluation code and data for the main paper is available at this [link](https://anonymous.4open.science/r/LocoVR_code_test-08E6/README.md)
