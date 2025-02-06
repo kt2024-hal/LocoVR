@@ -2,8 +2,6 @@
 
 We present LocoVR, a dataset of two-person interactions in over 130 different indoor VR scenes, including full body pose data and highly accurate spatial information. The dataset can be used to build AI agents that operate in indoor environments, such as home robots, or to create virtual avatars for games or animations that mimic human movement and posture. 
 
-[Evaluation code and data for ICLR2025 main paper is available at this link](https://anonymous.4open.science/r/LocoVR_code_test-08E6/README.md)
-
 [Our project website is accessible from this link](https://sites.google.com/view/locovr?usp=sharing)
 
 <!--
@@ -125,6 +123,14 @@ Evaluation code and data for the main paper is available at this [link](https://
 
 ## Citation
 If you find this repo useful for your research, please consider citing:
+@inproceedings{
+takeyama2025locovr,
+title={Loco{VR}: Multiuser Indoor Locomotion Dataset in Virtual Reality},
+author={Kojiro Takeyama and Yimeng Liu and Misha Sra},
+booktitle={The Thirteenth International Conference on Learning Representations},
+year={2025},
+url={https://openreview.net/forum?id=9mBodivRIo}
+}
 
 ## License
 This project is licensed under the MIT License
