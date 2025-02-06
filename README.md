@@ -128,7 +128,7 @@ title={Loco{VR}: Multiuser Indoor Locomotion Dataset in Virtual Reality},
 author={Kojiro Takeyama and Yimeng Liu and Misha Sra},
 booktitle={The Thirteenth International Conference on Learning Representations},
 year={2025},
-url={https://openreview.net/forum?id=9mBodivRIo}
+url={https://arxiv.org/abs/2410.06437}
 }
 ```
 
